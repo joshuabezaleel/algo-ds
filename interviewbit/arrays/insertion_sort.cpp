@@ -7,7 +7,7 @@ void insertionSort(int arr[], int length);
 void printArray(int arr[], int size);
 
 int main() {
-    int arr[] = {17,25,13,31,2};
+    int arr[] = {17,35,23,41,2};
     insertionSort(arr, sizeof(arr)/sizeof(arr[0]));
 
     return 0;
@@ -15,7 +15,7 @@ int main() {
 
 void insertionSort(int arr[], int length) {
     int val, temp;
-    for (int i=1;i<length;i++){
+    for(int i=1;i<length;i++){
         val = arr[i];
         temp = i;
         while(temp>0 && arr[temp-1]>val){
